@@ -1,0 +1,395 @@
+:root{
+  --main-color:#F13C6E;
+  --bg-color:#E5E5E5;
+  --black:#333333;
+  --gutter:15px;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  margin-top: auto;
+  font-size: 16px;
+}
+.container{
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+
+
+/* HEADER БЛОК */
+
+.header-top{
+  background-color: var(--bg-color);
+}
+
+.header-top ul{
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  align-items: center;
+}
+
+.header-top li{
+  padding: 0 15px 0 15px;
+  color: var(--black); 
+  font-size: 17px;;
+}
+
+.header-center-flex{
+  display: flex;
+  height: 120px;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0;
+}
+
+.header-center-flex div:first-child{
+  display: flex;
+  align-items: center;
+  margin-right: 172px;
+}
+
+.header-center-flex div:first-child p{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.1em;
+  color: var(--main-color);
+}
+
+.header-center-flex div:first-child img{
+  padding-right: 20px;
+}
+
+.header-center-flex input{
+  width: 250px;
+  height: 40px;
+  background: #EFEFEF;
+  border-radius: 40px;
+  border: 0;
+  margin-right: 93px;
+}
+
+.header-center-flex input::placeholder{
+  background-image: url(../img/zoom-2_90835.svg);
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-position: 5% 0;
+
+}
+
+.phone{
+  color: black;
+  text-decoration: none;
+  margin-right: 40px;
+}
+
+.ccall_back{
+  border: 2px solid var(--main-color);
+  background: #FFFFFF;
+  width: 170px;
+  height: 40px;
+  border-radius: 40px;
+  font-size: 14px;
+}
+
+.header-bottom{
+  border-top: 1px solid var(--bg-color);
+}
+
+.header-bottom ul{
+  display: flex;
+  justify-content: center;
+  height: 79px;
+  align-items: center;
+}
+
+.header-bottom li{
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+/* Секция промо */
+
+.promo{
+  background-image: url(../img/promo/bg-chair-promo.jpg);  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.promo-info {
+  max-width: 308px;
+  text-align: left;
+  padding: 192px 0;
+}
+
+.promo-info h1{
+  color: white;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.promo-info p{
+  color: white;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 50px 0;
+}
+.promo-info button{
+  background: var(--main-color);
+  border: 2px solid #FFFFFF;
+  border-radius: 40px;
+  width: 170px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+
+/* секция с карточками .Гриды */
+
+.offers{
+  padding: 80px 0;
+  background-color: var(--bg-color);
+}
+
+.title_blok{
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 38px;
+}
+
+.cards-wrap{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+}
+
+.product-card{
+  background-color: white;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.name{
+  font-size: 14px;
+  line-height: 20px;
+  width: 195px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.product-card img{
+  padding-top: 25px;
+}
+
+.price{
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  padding-bottom: 20px;
+}
+
+.button_product{
+  font-size: 14px;
+  background-color: var(--main-color);
+  border-radius: 30px;
+  color: #FFFFFF;
+  width: 130px;
+  height: 35px;
+  border: 0;
+  margin-top: auto;
+}
+
+/* Секция с двумя блоками */
+
+.present{
+  background-color: var(--bg-color);
+  padding: 20px 0;
+}
+
+.present-flex{
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
+  
+}
+
+.present-box{
+  background-color: var(--main-color);
+  margin: 0 15px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0;
+  color: white;
+}
+
+.present-box h3{
+  font-weight: bold;
+  font-size: 18px;
+  padding-left: 40px;
+  padding-top: 30px;
+}
+
+.present-box p{
+  font-size: 14px;
+  line-height: 20px;
+  padding: 25px 0 25px 40px;
+}
+
+.present-box input{
+  width: 225px;
+  height: 35px;
+  border-radius: 30px;
+  border: 0;
+}
+
+.present-box form{
+  padding-left: 40px;
+  padding-bottom: 35px;
+}
+
+.present-message{
+  float: right;
+  padding: 52.73px 0;
+  padding-right: 45px;
+}
+
+.present-box input::placeholder{
+  padding-left: 25px;
+  font-size: 14px;
+}
+
+.present-auto{
+  float: right;
+  padding: 56px 0;
+  padding-right: 45px;
+}
+
+.present-box button{
+  background-color: var(--main-color);
+  width: 170px;
+  height: 35px;
+  border-radius: 30px;
+  border: 2px solid #FFFFFF;
+  color: white;
+  margin-left: 40px;
+  margin-bottom: 35px;
+}
+
+/* Блок импульс */
+
+.impuls{
+  background-color: var(--bg-color);
+  padding: 80px 0;
+}
+
+.impuls__block{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #FFFFFF;
+  
+}
+
+.impuls__item{
+  width: 25%;
+  border: 1px solid #EFEFEF;
+  text-align: center;
+}
+
+.impuls_item__pictures{
+  padding: 35px;
+}
+
+/* Блок с карточками на флекс */
+
+.tender{
+  background-color: var(--bg-color);
+  padding-bottom: 80px;
+}
+
+.tender__list{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: calc(var(--gutter) * -1);
+  margin-left: calc(var(--gutter) * -1);
+}
+
+.tender_item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 30px;
+  background: #FFFFFF;
+  margin-right: var(--gutter);
+  margin-left: var(--gutter);
+  width: calc(100% / 12 * 3 - var(--gutter) * 2);
+}
+
+.tender__name{
+  padding: 20px 0;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.tender__price{
+  font-weight: 500;
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+
+.top__footer{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #EFEFEF;
+}
+
+.top__footer__info{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: calc(var(--gutter) * -1);
+  margin-left: calc(var(--gutter) * -1);
+}
+
+.top__footer__card{
+  width: calc(100% / 12 * 3 - var(--gutter) * 2);
+  margin-right: var(--gutter);
+  margin-left: var(--gutter);
+}
+
+.top__footer__title{
+  width: 100px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140.62%;
+  border-bottom: 1px solid #EFEFEF;
+  padding-bottom: 30px;
+}
+
+.top__footer__list{
+  padding-top: 25px;
+}
+
+.top__footer__item{
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 28px;
+  color: #828282;
+}
+
+/* Блок с соц. сетями */
